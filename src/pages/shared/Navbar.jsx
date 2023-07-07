@@ -22,6 +22,8 @@ const Navbar = ({ toggle, setToggle }) => {
 
     const navItems = <>
         <li className='hover:text-info'><Link>Home</Link></li>
+        {/* <li className='hover:text-info'><Link to='/instructors'>Instructors</Link></li> */}
+        <li className='hover:text-info'><Link to='/products'>Products</Link></li>
 
         {
             user ?

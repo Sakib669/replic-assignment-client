@@ -1,9 +1,9 @@
 import React from 'react';
-import useStudent from './../hooks/useStudent';
+import useGetProducts from '../hooks/useGetProducts';
 import { Navigate } from 'react-router-dom';
 
 const StudentPrivate = ({children}) => {
-    const [isStudent] = useStudent();
+    const [isStudent] = useGetProducts();
     // console.log('from is student ', isStudent);
 
     if(!isStudent){

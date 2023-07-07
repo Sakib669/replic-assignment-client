@@ -66,7 +66,7 @@ const Register = () => {
         googleLogIn()
             .then(result => {
                 const loggedUser = result.user;
-                const savedUser = { name: loggedUser.displayName, email: loggedUser.email, role: 'student' }
+                const savedUser = { name: loggedUser.displayName, email: loggedUser.email, role: 'customer' }
                 fetch('http://localhost:5000/users', {
                     method: 'POST',
                     headers: {

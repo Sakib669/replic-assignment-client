@@ -35,7 +35,6 @@ const ManageUsers = () => {
                             <th>Email</th>
                             <th>Role</th>
                             <th></th>
-                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -46,7 +45,6 @@ const ManageUsers = () => {
                                     <td>{item.email}</td>
                                     <td>{item.role}</td>
                                     <td><button className='btn btn-secondary' disabled={item.role === 'admin'} onClick={() => handleRoleUpdate('admin', item.email)}>Make Admin</button></td>
-                                    <td><button onClick={() => handleRoleUpdate('instructor', item.email)} className='btn btn-warning' disabled={item.role === 'instructor' || item.role === 'admin'}>Make Instructor</button></td>
                                 </tr>
                             )
                         }

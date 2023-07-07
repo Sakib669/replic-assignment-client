@@ -1,12 +1,14 @@
 import React from 'react';
-import useStudent from '../../hooks/useStudent';
+import useGetProducts from '../../hooks/useGetProducts';
 import { FaTrashAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 
-const SelectedClasses = () => {
-    const [isStudent, , refetch] = useStudent();
+const SelectedProducts = () => {
+    const [isStudent, , refetch] = useGetProducts();
+
+    console.log(isStudent)
 
     const handleDeleteLecture = (id) => {
         Swal.fire({
@@ -33,6 +35,8 @@ const SelectedClasses = () => {
             }
         })
     }
+
+
     return (
         <section>
             <div className="overflow-x-auto mx-40 min-h-screen">
@@ -40,9 +44,10 @@ const SelectedClasses = () => {
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Lecture Name</th>
-                            <th>Instructor</th>
-                            <th></th>
+                            <th>Product Name</th>
+                            <th>Color</th>
+                            <th>Material</th>
+                            <th>Price</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -51,12 +56,11 @@ const SelectedClasses = () => {
                             isStudent?.map((s, index) =>
                                 <tr key={s._id}>
                                     <th>{index + 1}</th>
-                                    <td>{s.lecture.name}</td>
-                                    <td>{s.lecture.instructor}</td>
+                                    <td>{s.lecture.type}</td>
+                                    <td>{s.lecture.color}</td>
+                                    <td>{s.lecture.material}</td>
+                                    <td>{s.lecture.price}</td>
                                     <td ><button onClick={() => handleDeleteLecture(s._id)} className='btn btn-error'><FaTrashAlt /></button></td>
-                                    <td><Link  to={{
-                                        pathname: `/dashboard/studentClasses/pay/${s._id}`,
-                                    }}><button className='btn btn-warning' >Pay</button></Link></td>
                                 </tr>
                             )
                         }
@@ -67,7 +71,7 @@ const SelectedClasses = () => {
     );
 };
 
-export default SelectedClasses;
+export default SelectedProducts;
 
 
 // to={`/dashboard/studentClasses/pay`}

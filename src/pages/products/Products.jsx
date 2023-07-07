@@ -1,10 +1,9 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import Swal from "sweetalert2";
 import useAdmin from '../../hooks/useAdmin';
-import useInstructor from '../../hooks/useInstructor';
 
 
 const Products = () => {
@@ -13,7 +12,7 @@ const Products = () => {
     const navigate = useNavigate();
     const [isAdmin] = useAdmin();
     const[x, setX] = useState([]);
-    console.log(x);
+    // console.log(x);
 
     useEffect((() => {
         axios('/bags.json')
@@ -36,8 +35,8 @@ const Products = () => {
         }
 
 
-        const lectureData = { lecture, email: user.email }
-        axios.post('http://localhost:5000/classes-cart', lectureData)
+        const productData = { lecture, email: user.email, statue: 'pending' }
+        axios.post('http://localhost:5000/classes-cart', productData)
             .then(res => {
                 if (res.data.acknowledged) {
                     Swal.fire(

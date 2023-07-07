@@ -1,40 +1,30 @@
 import React from 'react';
-import useStudent from '../../hooks/useStudent';
+import useGetProducts from '../../hooks/useGetProducts';
 import { NavLink } from 'react-router-dom';
-import useInstructor from '../../hooks/useInstructor';
 import useAdmin from '../../hooks/useAdmin';
 
 const DashboardNavbar = () => {
-    const [isStudent] = useStudent();
-    const [isInstructor] = useInstructor();
+    const [isStudent] = useGetProducts();
     const [isAdmin] = useAdmin();
-    // console.log(isAdmin, 'admin');
+    console.log(isAdmin, 'admin');
 
-    // console.log(isStudent , 'student');
+    console.log(isStudent , 'student');
     // console.log(isInstructor , 'instructor');
 
     const navItems = <>
         <li className='hover:text-info'><NavLink to='/'>Home</NavLink></li>
         {
-            isStudent &&
+            isStudent && !isAdmin.role  &&
             <>
                 <li className='hover:text-info'><NavLink to='/dashboard/studentClasses'>My Selected Classes</NavLink></li>
                 <li className='hover:text-info'><NavLink to='/dashboard/studentEnrolledClasses'>My Enrolled Classes</NavLink></li>
-                <li className='hover:text-info'><NavLink to='/dashboard/studentPaymentHistory'>Payment History</NavLink></li>
             </>
         }
         {
-            isInstructor?.role === 'instructor' &&
-            <>
-                <li className='hover:text-info'><NavLink to='/dashboard/instructorAddClass'>Add a Class</NavLink></li>
-                <li className='hover:text-info'><NavLink to='/dashboard/instructorMyClasses'>My Classes</NavLink></li>
-            </>
-        }
-        {
-            isAdmin?.role === 'admin' &&
+            isAdmin?.role === 'admin' && 
             <>
                 <li className='hover:text-info'><NavLink to='/dashboard/admin/manageUsers'>Manage Users</NavLink></li>
-                <li className='hover:text-info'><NavLink to='/dashboard/admin/manageClasses'>Manage Classes</NavLink></li>
+                <li className='hover:text-info'><NavLink to='/dashboard/admin/manageClasses'>Manage Products</NavLink></li>
             </>
         }
     </>
