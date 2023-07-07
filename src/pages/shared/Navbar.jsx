@@ -18,14 +18,10 @@ const Navbar = ({ toggle, setToggle }) => {
             })
     }
 
-    const handleToggleChange = () => {
-        setToggle(toggle => !toggle);
-    }
+    
 
     const navItems = <>
         <li className='hover:text-info'><Link>Home</Link></li>
-        {/* <li className='hover:text-info'><Link to='/instructors'>Instructors</Link></li> */}
-        <li className='hover:text-info'><Link to='/classes'>Products</Link></li>
 
         {
             user ?
@@ -45,10 +41,6 @@ const Navbar = ({ toggle, setToggle }) => {
                 </li>
             </>
         }
-        {/* <li ><select onChange={handleToggleChange} className="select w-5 max-w-xs hidden md:block">
-            <option value={false} defaultValue>Light</option>
-            <option value={true}>Dark</option>
-        </select></li> */}
     </>
     return (
         <nav className={`navbar  items-center ${toggle ? 'bg-base-200' : 'bg-slate-500 text-white'}`}>
@@ -61,7 +53,7 @@ const Navbar = ({ toggle, setToggle }) => {
                         {navItems}
                     </ul>
                     <a className=" normal-case text-xl">
-                        <img src="https://i.ibb.co/SrW2q87/logo-1.png"
+                        <img src="https://www.kroyshop.com/public/uploads/all/PVDkaQCi1uUnnzcMybNFUJ9oM1mFk2JVflQTwgKu.jpg"
                             className="w-32 inline" />
                     </a>
 

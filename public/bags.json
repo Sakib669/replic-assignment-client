@@ -1,0 +1,142 @@
+[
+  {
+    "type": "Tote Bag",
+    "color": "Black",
+    "material": "Canvas",
+    "price": 25.99,
+    "image": "https://dummyimage.com/300x200/black"
+  },
+  {
+    "type": "Backpack",
+    "color": "Blue",
+    "material": "Nylon",
+    "price": 39.99,
+    "image": "https://dummyimage.com/300x200/blue"
+  },
+  {
+    "type": "Clutch",
+    "color": "Silver",
+    "material": "Leather",
+    "price": 49.99,
+    "image": "https://dummyimage.com/300x200/silver"
+  },
+  {
+    "type": "Messenger Bag",
+    "color": "Brown",
+    "material": "Suede",
+    "price": 59.99,
+    "image": "https://dummyimage.com/300x200/brown"
+  },
+  {
+    "type": "Duffel Bag",
+    "color": "Red",
+    "material": "Polyester",
+    "price": 34.99,
+    "image": "https://dummyimage.com/300x200/red"
+  },
+  {
+    "type": "Satchel",
+    "color": "Tan",
+    "material": "Leather",
+    "price": 79.99,
+    "image": "https://dummyimage.com/300x200/tan"
+  },
+  {
+    "type": "Shoulder Bag",
+    "color": "Gray",
+    "material": "Fabric",
+    "price": 29.99,
+    "image": "https://dummyimage.com/300x200/gray"
+  },
+  {
+    "type": "Crossbody Bag",
+    "color": "Green",
+    "material": "Faux Leather",
+    "price": 19.99,
+    "image": "https://dummyimage.com/300x200/green"
+  },
+  {
+    "type": "Hobo Bag",
+    "color": "Beige",
+    "material": "Suede",
+    "price": 44.99,
+    "image": "https://dummyimage.com/300x200/beige"
+  },
+  {
+    "type": "Weekender Bag",
+    "color": "Navy",
+    "material": "Canvas",
+    "price": 64.99,
+    "image": "https://dummyimage.com/300x200/navy"
+  },
+  {
+    "type": "Clutch",
+    "color": "Pink",
+    "material": "Velvet",
+    "price": 24.99,
+    "image": "https://dummyimage.com/300x200/pink"
+  },
+  {
+    "type": "Tote Bag",
+    "color": "White",
+    "material": "Cotton",
+    "price": 19.99,
+    "image": "https://dummyimage.com/300x200/white"
+  },
+  {
+    "type": "Backpack",
+    "color": "Red",
+    "material": "Polyester",
+    "price": 49.99,
+    "image": "https://dummyimage.com/300x200/red"
+  },
+  {
+    "type": "Crossbody Bag",
+    "color": "Black",
+    "material": "Faux Leather",
+    "price": 34.99,
+    "image": "https://dummyimage.com/300x200/black"
+  },
+  {
+    "type": "Satchel",
+    "color": "Brown",
+    "material": "Leather",
+    "price": 59.99,
+    "image": "https://dummyimage.com/300x200/brown"
+  },
+  {
+    "type": "Bucket Bag",
+    "color": "Gray",
+    "material": "Suede",
+    "price": 39.99,
+    "image": "https://dummyimage.com/300x200/gray"
+  },
+  {
+    "type": "Shoulder Bag",
+    "color": "Blue",
+    "material": "Denim",
+    "price": 29.99,
+    "image": "https://dummyimage.com/300x200/blue"
+  },
+  {
+    "type": "Tote Bag",
+    "color": "Purple",
+    "material": "Nylon",
+    "price": 24.99,
+    "image": "https://dummyimage.com/300x200/purple"
+  },
+  {
+    "type": "Clutch",
+    "color": "Gold",
+    "material": "Sequins",
+    "price": 44.99,
+    "image": "https://dummyimage.com/300x200/gold"
+  },
+  {
+    "type": "Duffel Bag",
+    "color": "Green",
+    "material": "Canvas",
+    "price": 54.99,
+    "image": "https://dummyimage.com/300x200/green"
+  }
+]

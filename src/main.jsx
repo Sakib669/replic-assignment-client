@@ -30,6 +30,7 @@ import DashboardHome from './pages/dashboard/DashboardHome.jsx'
 import StudentPrivate from './routes/StudentPrivate.jsx'
 import InstructorPrivate from './routes/InstructorPrivate.jsx'
 import AdminPrivate from './routes/AdminPrivate.jsx'
+import Products from './pages/products/Products';
 
 const queryClient = new QueryClient();
 
@@ -51,13 +52,9 @@ const router = createBrowserRouter([
         element: <Register />
       },
       {
-        path: '/instructors',
-        element: <Instructors />
-      },
-      {
-        path: '/classes',
-        element: <Classes />,
-        loader: () => axios('http://localhost:5000/classes')
+        path: '/products',
+        element: <Products />,
+        // loader: () => axios('http://localhost:5000/classes')
       },
     ]
   },
