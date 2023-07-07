@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "subject": "Physics",
+      "author": "Tahmina Akter",
+      "content": "Great course! The explanations were clear, and the examples helped me understand complex concepts easily.",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "subject": "Chemistry",
+      "author": "Rahim Ahmed",
+      "content": "I loved the chemistry lessons! The interactive experiments made learning so much fun. Highly recommended!",
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "subject": "Math",
+      "author": "Nusrat Jahan",
+      "content": "The math course was outstanding. The instructor's approach simplified difficult topics and improved my problem-solving skills.",
+      "rating": 4.2
+    },
+    {
+      "id": 4,
+      "subject": "Biology",
+      "author": "Abdullah Khan",
+      "content": "The biology lessons were comprehensive and well-structured. I enjoyed the practical exercises and gained a deeper understanding of the subject.",
+      "rating": 4.6
+    }
+  ]
+  
