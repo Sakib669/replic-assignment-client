@@ -40,7 +40,7 @@ const ManageUsers = () => {
                     <tbody>
                         {
                             allUsers?.map(item =>
-                                <tr>
+                                <tr key={item._id}>
                                     <th>{item.name}</th>
                                     <td>{item.email}</td>
                                     <td>{item.role}</td>
